@@ -2,6 +2,12 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 
+/**
+ * Sort a name list by last name firstly, and then given names.
+ * Read file from argument as an input name list, then write the sorted name list to current folder.
+ * @author Sonia Song
+ *
+ */
 public class NameSorter {
 
     public static void main(String[] args) throws Exception {
@@ -20,7 +26,6 @@ public class NameSorter {
                 } catch (IllegalArgumentException e) {
                     System.out.println("Error at line " + lineNumber + ", name: " + e.getMessage());
                 }
-
             }
         } catch (IOException e) {
             e.printStackTrace();
