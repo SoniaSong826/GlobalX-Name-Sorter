@@ -1,6 +1,10 @@
 import java.util.ArrayList;
 import java.util.Arrays;
-
+/** Represents a Name with family name and given name.
+ * @author Sonia Song
+ *
+ *
+ */
 public class Name implements Comparable<Name> {
 
     private final String familyName;

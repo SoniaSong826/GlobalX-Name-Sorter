@@ -1,19 +1,14 @@
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
 
 public class NameSorter {
 
     public static void main(String[] args) throws Exception {
         ArrayList<Name> nameList = new ArrayList<Name>();
-        String inputPath = (args.length>0) ? args[0] : "./unsorted-names-list.txt";
+        String inputPath = (args.length > 0) ? args[0] : "./unsorted-names-list.txt";
 
         int lineNumber = 0;
-
         try (BufferedReader br = new BufferedReader(new FileReader(inputPath))) {
             String line;
             while ((line = br.readLine()) != null) {
